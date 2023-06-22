@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('doc_documentos', function (Blueprint $table) {
             $table->id();
+            $table->doc_nombre();
+            $table->doc_codigo();
+            $table->doc_contenido();
+            $table->doc_id_tipo();
+            $table->doc_id_proceso();
             $table->timestamps();
         });
     }
