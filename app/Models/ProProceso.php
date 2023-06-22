@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class ProProceso extends Model
 {
     use HasFactory;
+
+    protected $table = 'pro_procesos';
+    
+    protected $fillable = [];
+
+    public function documentos()
+    {
+        return $this->hasMany(DocDocumento::class);
+    }
 }
