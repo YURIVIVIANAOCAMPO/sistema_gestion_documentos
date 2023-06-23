@@ -26,12 +26,12 @@ Route::delete('/tipodoc/delete/{id}', [TipTipoDocController::class, 'destroy']);
 //Route::apiResource('/tipodoc', TipTipoDocController::class);
 
 // DOCUMENTOS
-Route::get('/docdocument/list', [DocDocumentoController::class, 'index']);
-Route::post('/docdocument/add', [DocDocumentoController::class, 'store']);
-Route::get('/docdocument/list/{id}', [DocDocumentoController::class, 'show']);
-Route::put('/docdocument/update/{id}', [DocDocumentoController::class, 'update']);
-Route::delete('/docdocument/delete/{id}', [DocDocumentoController::class, 'destroy']);
-//Route::apiResource('/docdocumet', DocDocumentoController::class);
+Route::get('/document/list', [DocDocumentoController::class, 'index']);
+Route::post('/document/add', [DocDocumentoController::class, 'store']);
+Route::get('/document/list/{id}', [DocDocumentoController::class, 'show']);
+Route::put('/document/update/{id}', [DocDocumentoController::class, 'update']);
+Route::delete('/document/delete/{id}', [DocDocumentoController::class, 'destroy']);
+//Route::apiResource('/document', DocDocumentoController::class);
 
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

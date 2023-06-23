@@ -40,7 +40,7 @@ class TipTipoDocController extends Controller
         return response()->json([
             'success' => true,
             'status' => 201,
-            'message' => 'Usuario creado correctamente'
+            'message' => 'Tipo Documento creado correctamente'
 
         ]);
     }
@@ -63,7 +63,7 @@ class TipTipoDocController extends Controller
         return response()->json([
             'success' => true,
             'status' => 201,
-            'message' => 'Usuario actualizado correctamente'
+            'message' => 'Tipo documento actualizado correctamente'
         ]);
         
     }
