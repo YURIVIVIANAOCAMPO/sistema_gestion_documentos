@@ -3,17 +3,23 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\ProProcesoController;
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+
+// PROCESOS rutas para los endpoint
+
+Route::get('/proceso/list', [ProProcesoController::class, 'index']);
+Route::post('/proceso/add', [ProProcesoController::class, 'store']);
+Route::get('/proceso/list/{id}', [ProProcesoController::class, 'show']);
+Route::put('/proceso/update/{id}', [ProProcesoController::class, 'update']);
+Route::delete('/proceso/delete/{id}', [ProProcesoController::class, 'destroy']);
+// Route::apiResource('/proceso', ProProcesoController::class);
+
+
+
+
+
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });

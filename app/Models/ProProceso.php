@@ -11,7 +11,10 @@ class ProProceso extends Model
 
     protected $table = 'pro_procesos';
     
-    protected $fillable = [];
+    protected $fillable = [
+        'pro_nombre',
+        'pro_prefijo'
+    ];
 
     public function documentos()
     {
