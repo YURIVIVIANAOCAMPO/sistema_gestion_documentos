@@ -11,7 +11,13 @@ class DocDocumento extends Model
 
     protected $table = 'doc_documentos';
 
-    protected $fillable = [];
+    protected $fillable = [
+        'doc_nombre',
+        'doc_codigo',
+        'doc_contenido',
+        'pro_proceso_id',
+        'tip_tipodoc_id'
+    ];
 
     public function proceso()
     {

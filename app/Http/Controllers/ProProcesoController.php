@@ -16,7 +16,11 @@ class ProProcesoController extends Controller
     public function show($id)
     {
         $proceso = ProProceso::findOrFail($id);
-        return response()->json($proceso);
+        return response()->json([
+            'succes' => true,
+            'status' => 200,
+            'data' =>$proceso
+        ]);
     }
 
     public function store(Request $request)
@@ -40,8 +44,8 @@ class ProProcesoController extends Controller
         }
 
         $validatedData = $request->validate([
-            'pro_nombre' => 'required|string',
-            'pro_prefijo' => 'required|string',
+            'pro_nombre' => 'string',
+            'pro_prefijo' => 'string',
         ]);
 
         $pro_proceso->update($validatedData);

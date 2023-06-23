@@ -11,7 +11,10 @@ class TipTipoDoc extends Model
 
     protected $table = 'tip_tipo_docs';
 
-    protected $fillable = [];
+    protected $fillable = [
+        'tip_nombre',
+        'tip_prefijo'
+    ];
 
     public function documentos()
     {
