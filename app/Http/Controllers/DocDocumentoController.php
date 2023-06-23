@@ -22,7 +22,7 @@ class DocDocumentoController extends Controller
     {
         $validatedData = $request->validate([
             'doc_nombre'=> 'required|string',
-            'doc_codigo'=> 'required|integer',
+            'doc_codigo'=> 'required|string',
             'doc_contenido'=> 'required|string',
             'pro_proceso_id'=> 'required|exists:pro_procesos,id',
             'tip_tipodoc_id'=> 'required|exists:tip_tipo_docs,id',
@@ -37,6 +37,8 @@ class DocDocumentoController extends Controller
 
         ]);
     }
+
+    
 
     public function show($id)
     {
@@ -58,7 +60,7 @@ class DocDocumentoController extends Controller
 
         $validatedData = $request->validate([
             'doc_nombre'=> 'string',
-            'doc_codigo'=> 'integer',
+            'doc_codigo'=> 'string',
             'doc_contenido'=> 'string',
             'pro_proceso_id'=> 'exists:pro_procesos,id',
             'tip_tipodoc_id'=> 'exists:tip_tipo_docs,id',
