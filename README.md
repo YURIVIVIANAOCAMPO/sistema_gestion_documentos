@@ -9,7 +9,7 @@
 
 ## Prueba Técnica - Sistema de Registro de Documentos
 
-Este proyecto es una prueba técnica que consiste en desarrollar un CRUD (Create, Read, Update, Delete) para el registro de documentos utilizando PHP y siguiendo el patrón de diseño MVC (Modelo-Vista-Controlador) o servicios web REST. La interfaz de usuario no requiere estilización, pero debe ser funcional.
+Este proyecto es una prueba técnica que consiste en desarrollar un CRUD (Create, Read, Update, Delete) para el registro de documentos utilizando PHP y siguiendo el patrón de diseño MVC (Modelo-Vista-Controlador) o servicios web REST. 
 
 ## Endpoints
 
