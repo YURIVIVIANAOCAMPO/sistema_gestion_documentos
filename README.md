@@ -11,6 +11,30 @@
 
 Este proyecto es una prueba técnica que consiste en desarrollar un CRUD (Create, Read, Update, Delete) para el registro de documentos utilizando PHP y siguiendo el patrón de diseño MVC (Modelo-Vista-Controlador) o servicios web REST. La interfaz de usuario no requiere estilización, pero debe ser funcional.
 
+## Endpoints
+
+-Procesos
+    GET - http://127.0.0.1:8000/api/proceso/list                Listar general
+    POST - http://127.0.0.1:8000/api/proceso/add                Guardar
+    GET - http://127.0.0.1:8000/api/proceso/list/1              Listar por id
+    PUT - http://127.0.0.1:8000/api/proceso/update/1            Actualiza por id
+    DELETE - http://127.0.0.1:8000/api/proceso/delete/1         Elimina por id
+
+-Tipo documentos
+    GET - http://127.0.0.1:8000/api/tipodoc/list                Listar general
+    POST - http://127.0.0.1:8000/api/tipodoc/add                Guardar
+    GET - http://127.0.0.1:8000/api/tipodoc/list/1              Listar por id
+    PUT - http://127.0.0.1:8000/api/tipodoc/update/1            Actualiza por id
+    DELETE - http://127.0.0.1:8000/api/tipodoc/delete/1         Elimina por id
+ 
+- Documentos
+   GET - http://127.0.0.1:8000/api/document/list                Listar general
+   POST - http://127.0.0.1:8000/api/document/add                Guardar
+   GET - http://127.0.0.1:8000/api/document/list/1              Listar por id
+   PUT - http://127.0.0.1:8000/api/document/update/1            Actualiza por id
+   DELETE - http://127.0.0.1:8000/api/document/delete/1         Elimina por id
+
+
 ## Requerimientos
 
 - PHP (versión 8.1.12)
